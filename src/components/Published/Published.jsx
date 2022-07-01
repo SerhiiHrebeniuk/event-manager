@@ -21,6 +21,7 @@ const Published = () => {
   };
   return (
     <div className='itemList'>
+      {/* eslint-disable-next-line array-callback-return*/}
       {tasks.map((item) => {
              if (item && item.status === "Published") 
           return (
