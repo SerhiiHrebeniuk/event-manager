@@ -1,4 +1,4 @@
-Getting Started
+# Getting Started
 
 Clone this repo on your lokal machine, cklick on button Code and paste to terminal the url, or click on download zip. After open projects in your IDE.
 
