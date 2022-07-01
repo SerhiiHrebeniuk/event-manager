@@ -1,0 +1,28 @@
+.timezone {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 30px;
+    }
+
+    span {
+        margin-right: 30px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+    }
+}
+
+@media (max-width: 501px) {
+    .timezone {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 0;
+
+        img, span {
+            margin-bottom: 30px;
+        }
+    }
+}

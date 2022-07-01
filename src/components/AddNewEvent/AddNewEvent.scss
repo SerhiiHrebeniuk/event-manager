@@ -1,0 +1,179 @@
+.addContainer {
+    position: absolute; 
+    width: 300px;            
+    min-height: 270px;
+    border: 1px solid black;
+    border-radius: 10px;
+    top: 170px;
+    bottom: 0;
+    left: 480px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+    background: #fff;
+
+
+    form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form_input {
+        margin-bottom: 20px;
+        margin-top: 20px; 
+        width: 90%;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .form_input:focus {
+        outline: none;
+    }
+
+    .form_input::placeholder {
+        padding-left: 20px;
+    }
+
+    .form_textarea {
+        margin-bottom: 10px;
+        margin-top: 10px; 
+        width: 270px;
+        height: 100px;
+        max-width: 270px;
+        max-height: 100px;
+        border-radius: 5px;
+    }
+    .form_textarea::placeholder {
+        padding-left: 20px;
+    }
+
+    .formBtn {
+        display: flex;
+        margin-top: 15px;
+    }
+
+    .btn {
+        width: 120px;
+        height: 40px;
+        border-radius: 60px;
+        background-color: #4ADE80;
+        border-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 29px;
+        color: #fff;
+        cursor: pointer;
+        transition: all .3s;
+        margin: 0 10px;
+
+        &:hover {
+            transform: scale(1.01);
+            box-shadow: 0 6px 4px darkgray;
+
+            &:active {
+                transform: scale(.98);
+                box-shadow: 0 3px 2px darkgray;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .addContainer {
+        top: 190px;
+        bottom: 0;
+        left: 328px;
+        right: auto;
+        width: 45%;
+
+        .form_textarea {
+            width: 100%;
+            max-width: 89%;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .addContainer {
+        top: 190px;
+        bottom: 0;
+        left: 238px;
+        right: auto;
+        width: 55%;
+        height: 300px;
+
+        .form_textarea {
+            width: 100%;
+            max-width: 89%;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .addContainer {
+        top: 190px;
+        bottom: 0;
+        left: 145px;
+        right: auto;
+        width: 65%;
+        height: 300px;
+
+        .form_textarea {
+            width: 100%;
+            max-width: 89%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .addContainer {
+        top: 190px;
+        bottom: 0;
+        left: 45px;
+        right: auto;
+        width: 85%;
+        height: 300px;
+
+        .form_textarea {
+            width: 100%;
+            max-width: 89%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .addContainer {
+        top: 190px;
+        bottom: 0;
+        left: 45px;
+        right: auto;
+        width: 85%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .addContainer {
+        top: 190px;
+        bottom: 0;
+        left: auto;
+        right: auto;
+        width: 100%;
+        height: 300px;
+
+        .form_textarea {
+            width: 100%;
+            max-width: 89%;
+        }
+    }
+}
+
+

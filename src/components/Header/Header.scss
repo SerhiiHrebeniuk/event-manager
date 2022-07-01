@@ -1,0 +1,26 @@
+.header {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    h1 {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 49px;
+    }
+}
+
+
+@media (max-width: 740px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h1 {
+            font-size: 36px;
+        }
+    }
+}

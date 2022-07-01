@@ -1,0 +1,165 @@
+.dashboard {
+    margin-top: 50px;
+    position: relative;
+
+    .event {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+
+        .eventpage {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 50%;
+            height: 70px;
+            background-color: gray;
+            border-radius: 50px;
+
+            .publishedActive,
+            .unpublishedActive {
+                width: 40%;
+                height: 50px;
+                margin: 10px 10px;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #4285F4;
+                font-family: 'Montserrat';
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+                color: #fff;
+                text-decoration: none;
+                transition: all .5s;
+            }
+
+            .publishedNoActive,
+            .unpublishedNoActive {
+                text-decoration: none;
+                align-items: center;
+                color: #000;
+                font-family: 'Montserrat';
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+            }
+
+            .publishedNoActive {
+                padding-left: 20px;
+                text-align: center;
+                width: 40%;
+            }
+
+            .unpublishedNoActive {
+                padding-right: 20px;
+                text-align: center;
+                width: 40%;
+            }
+        }
+
+        button {
+            width: 230px;
+            height: 70px;
+            border-radius: 60px;
+            background-color: #4ADE80;
+            border-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: #fff;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover {
+                transform: scale(1.01);
+                box-shadow: 0 6px 4px darkgray;
+
+                &:active {
+                    transform: scale(.98);
+                    box-shadow: 0 3px 2px darkgray;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 920px) {
+    .dashboard {
+        .event{
+            width: auto;
+            .eventpage {
+                .publishedActive,
+                .unpublishedActive {
+                    width: auto;
+                    font-size: 22px;
+                    padding: 0 10px;   
+                }
+
+                .publishedNoActive,
+                .unpublishedNoActive {
+                    width: auto;
+                    font-size: 22px;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    .dashboard {
+        .event{
+
+            align-items: center;
+            justify-content: center;
+            .eventpage {
+                justify-content: center;
+                height: auto;
+                width: auto;
+                
+                .publishedActive,
+                .unpublishedActive {
+                    width: auto;
+                    font-size: 20px;
+                    padding: 0 20px;   
+                    height: auto;
+                }
+
+                .publishedNoActive,
+                .unpublishedNoActive {
+                    width: auto;
+                    font-size: 20px;
+                    height: auto;
+                }
+
+            }
+
+
+            button {
+                height: 48px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    .dashboard {
+        .event{
+            button {
+                margin-top: 30px;
+            }
+        }
+    }
+}
